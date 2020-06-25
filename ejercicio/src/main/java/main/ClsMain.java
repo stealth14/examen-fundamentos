@@ -21,16 +21,24 @@ public class ClsMain {
 
     public static void main(String[] args) {
             
-        String nombre;
-        String edad;
 
         Scanner input = new Scanner(System.in);
 
-        int number = input.nextInt();
-        System.out.println("Contacto " + number+" ingresado exitosamente!!");
+        String nombre = input.nextLine();
+        System.out.println("Contacto " + nombre+" ingresado exitosamente!!");
 
         // closing the scanner object
         input.close();
+        
+        
+        Scanner inpt = new Scanner(System.in);
+
+        int edad = inpt.nextInt();
+        System.out.println("Contacto " + edad+" ingresado exitosamente!!");
+
+        // closing the scanner object
+        inpt.close();
+        
     }
     
 }
