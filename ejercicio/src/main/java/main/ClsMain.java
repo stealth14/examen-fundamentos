@@ -18,26 +18,35 @@ import java.io.InputStreamReader;
  */
 public class ClsMain {
     
-
-    public static void main(String[] args) {
-            
-
+    public static void recogeContacto(){
+        
+                System.out.println("Escribe un nombre \n");
+        
         Scanner input = new Scanner(System.in);
 
         String nombre = input.nextLine();
-        System.out.println("Contacto " + nombre+" ingresado exitosamente!!");
+        System.out.println("Contacto " + nombre+" ingresado exitosamente!!\n");
 
         // closing the scanner object
-        input.close();
         
         
         Scanner inpt = new Scanner(System.in);
-
+        
+        System.out.println("Escribe la edad de "+nombre+"\n");
         int edad = inpt.nextInt();
-        System.out.println("Contacto " + edad+" ingresado exitosamente!!");
+        System.out.println("Contacto " + nombre+" ingresado exitosamente!!\n");
 
         // closing the scanner object
-        inpt.close();
+        
+    }
+
+    public static void main(String[] args) {
+            
+        while(true){
+            
+            ClsMain.recogeContacto();
+            
+        }
         
     }
     
