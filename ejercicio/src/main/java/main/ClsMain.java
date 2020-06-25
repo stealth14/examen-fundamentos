@@ -6,6 +6,12 @@
 package main;
 import java.util.Scanner;
 
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+
+
 /**
  *
  * @author ronnycajas
@@ -13,17 +19,18 @@ import java.util.Scanner;
 public class ClsMain {
     
 
-        public static void main(String[] args) {
+    public static void main(String[] args) {
             
         String nombre;
         String edad;
-        
-        System.out.printf("Agenda en python ;v");
-        
 
-        
-        
-        
+        Scanner input = new Scanner(System.in);
+
+        int number = input.nextInt();
+        System.out.println("Contacto " + number+" ingresado exitosamente!!");
+
+        // closing the scanner object
+        input.close();
     }
     
 }
